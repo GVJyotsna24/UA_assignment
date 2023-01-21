@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+.App{
+  background-color: rgb(216, 214, 245);
+  padding-bottom: 20px;
+}
+.navbar{
+  background-color:rgb(82, 82, 82);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headcont{
+  padding-top:80px;
+  background-color: rgb(216, 214, 245);
+  border-bottom: 1px solid rgb(200, 197, 197);
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ltln{
+  color:rgb(77, 72, 75);
+  font-size: 13px;
 }
+.cardscont{
+  padding-top: 40px;
+  background-color: rgb(216, 214, 245);
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.card{
+  border-color:rgb(216, 214, 245);
+}
+.card1h, .card1b{
+  background-color: rgb(216, 214, 245);
+}
+.cardDate{
+  padding-top: 10px;
+  padding-bottom: 3px;
+}
+.cardHead{
+  padding-bottom: 15px;
+  background-color: rgb(91, 85, 85);
   color: white;
-}
+  text-align: center;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list{
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  background-color: rgb(91, 85, 85);
+  text-align: center;
+  
+}
+.col1 .col2 .col3 .col4 .col5 .col6{
+  position: absolute;
+  overflow-y: scroll;
+}
+.CardBody{
+  padding-top:20px;
+  background-color: rgb(91, 85, 85);
+ 
 }

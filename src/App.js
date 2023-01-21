@@ -1,10 +1,21 @@
-import logo from './logo.svg';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 import './App.css';
+import Head from './Head';
+import Cards from './Cards';
 
 function App() {
   return (
     <div className="App">
-      
+     <Navbar fixed='top' variant="dark" className='navbar'>
+        <Container>
+          <Navbar.Brand href="#home"><i className='fa-solid fa-lg fa-globe'></i> WEATHER 99</Navbar.Brand>
+          <Navbar.Text className='justify-content-end'><i className='fa-solid fa-rotate-right'></i> Refresh</Navbar.Text>
+        </Container>
+      </Navbar>
+      <Head/>
+      <Cards/>
     </div>
   );
 }
