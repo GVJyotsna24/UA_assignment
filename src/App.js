@@ -1,9 +1,10 @@
 import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './App.css';
-import Head from './Head';
 import Cards from './Cards';
+import Head from './Head'
+
+
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       </Navbar>
       <Head/>
       <Cards/>
+      
     </div>
   );
 }

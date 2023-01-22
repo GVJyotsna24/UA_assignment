@@ -1,0 +1,22 @@
+[
+    {
+        "dt":1674399600,
+        "main":{"temp":277.16,"feels_like":277.16,"temp_min":276.83,"temp_max":277.16,"pressure":1034,"sea_level":1034,"grnd_level":1031,"humidity":77,"temp_kf":0.33},
+        "weather":[{"id":802,"main":"Clouds","description":"scattered clouds","icon":"03d"}],
+        "clouds":{"all":39},
+        "wind":{"speed":0.18,"deg":40,"gust":0.53},
+        "visibility":10000,"pop":0,"sys":{"pod":"d"},
+        "dt_txt":"2023-01-22"
+    },
+    {
+        "dt":1674432000,
+        "main":{"temp":273.57,"feels_like":273.57,"temp_min":273.57,"temp_max":273.57,"pressure":1035,"sea_level":1035,"grnd_level":1032,"humidity":77,"temp_kf":0},
+        "weather":[{"id":803,"main":"Clouds","description":"broken clouds","icon":"04n"}],
+        "clouds":{"all":64},"wind":{"speed":0.69,"deg":87,"gust":0.68},
+        "visibility":10000,"pop":0,"sys":{"pod":"n"},
+        "dt_txt":"2023-01-23"
+    },
+    {"dt":1674518400,"main":{"temp":273.87,"feels_like":273.87,"temp_min":273.87,"temp_max":273.87,"pressure":1038,"sea_level":1038,"grnd_level":1035,"humidity":91,"temp_kf":0},"weather":[{"id":802,"main":"Clouds","description":"scattered clouds","icon":"03n"}],"clouds":{"all":44},"wind":{"speed":1.28,"deg":36,"gust":1.27},"visibility":10000,"pop":0,"sys":{"pod":"n"},"dt_txt":"2023-01-24"},
+    {"dt":1674604800,"main":{"temp":274.78,"feels_like":274.78,"temp_min":274.78,"temp_max":274.78,"pressure":1037,"sea_level":1037,"grnd_level":1034,"humidity":83,"temp_kf":0},"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01n"}],"clouds":{"all":0},"wind":{"speed":0.73,"deg":194,"gust":0.72},"visibility":10000,"pop":0,"sys":{"pod":"n"},"dt_txt":"2023-01-25"},
+    {"dt":1674691200,"main":{"temp":277.63,"feels_like":273.89,"temp_min":277.63,"temp_max":277.63,"pressure":1025,"sea_level":1025,"grnd_level":1022,"humidity":80,"temp_kf":0},"weather":[{"id":803,"main":"Clouds","description":"broken clouds","icon":"04n"}],"clouds":{"all":77},"wind":{"speed":4.9,"deg":349,"gust":11.98},"visibility":10000,"pop":0.73,"sys":{"pod":"n"},"dt_txt":"2023-01-26"}
+]
