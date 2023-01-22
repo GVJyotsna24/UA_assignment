@@ -7,7 +7,7 @@ function Cards(){
         <div>
             <Container  className="cardscont">
                 <Row>
-                    <Col md={2}  className=" col1 mb-3" >
+                    <Col xs={12} md={2}  className=" col1 mb-3" >
                         <Card className="card">
                             <Card.Header className="card1h">
                                 <Form>
@@ -28,7 +28,7 @@ function Cards(){
                                 </Card.Body>
                         </Card>
                     </Col>
-                    <Col md={2}  className='col2' >
+                    <Col xs={6} md={2}  className='col2' >
                     <h6 className="cardDate">{Records[0].dt_txt}</h6>
                         <Card >
                             <Card.Header className="cardHead">
@@ -54,7 +54,7 @@ function Cards(){
                                 </Card.Body>
                         </Card>
                     </Col>
-                    <Col md={2}  className="col3">
+                    <Col  xs={6} md={2}  className="col3">
                     <h6 className="cardDate">{Records[1].dt_txt}</h6>
                         <Card>
                             <Card.Header className="cardHead">
@@ -80,7 +80,7 @@ function Cards(){
                                 </Card.Body>
                         </Card>
                     </Col>
-                    <Col md={2}  className="col4">
+                    <Col md={2} xs={6} className="col4">
                     <h6 className="cardDate">{Records[2].dt_txt}</h6>
                         <Card>
                             <Card.Header className="cardHead">
@@ -106,7 +106,7 @@ function Cards(){
                                 </Card.Body>
                         </Card>
                     </Col>
-                    <Col md={2}  className="col5">
+                    <Col md={2} xs={6} className="col5">
                     <h6 className="cardDate">{Records[3].dt_txt}</h6>
                         <Card>
                             <Card.Header className="cardHead">
@@ -134,7 +134,7 @@ function Cards(){
                                 </Card.Body>
                         </Card>
                     </Col>
-                    <Col md={2}  className='col6'>
+                    <Col md={2} xs={6}  className='col6'>
                     <h6 className="cardDate">{Records[4].dt_txt}</h6>
                         <Card>
                             <Card.Header className="cardHead">

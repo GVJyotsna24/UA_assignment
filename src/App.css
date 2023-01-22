@@ -26,6 +26,7 @@
 }
 .card1h, .card1b{
   background-color: rgb(216, 214, 245);
+  text-align:center;
 }
 .cardDate{
   padding-top: 10px;
