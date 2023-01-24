@@ -16,7 +16,7 @@ function App() {
         </Container>
       </Navbar>
       <Head/>
-      <Cards/>
+    
       
     </div>
   );

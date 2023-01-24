@@ -8,15 +8,15 @@ function Head(){
     return(
         <Container className="headcont">
             <Row>
-                <Col xs={12} md={4}>
+                
                     <Location/>
-                </Col>
-                <Col xs={12} md={4}>
-                    <Searchbar/>
-                    
-                </Col>
-                <Col xs={12} md={4}>
-                </Col>
+              
+                
+                   
+
+            </Row>
+            <Row>
+                <Searchbar/>
             </Row>
         </Container>
         

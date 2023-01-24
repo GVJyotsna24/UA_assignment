@@ -1,3 +1,4 @@
+import Cards from './Cards';
 import Records from './city.list.json'
 
 
@@ -13,6 +14,7 @@ function Location(props){
                     <div>
                             <h4 className="heading"><i className="fa-solid fa-location-dot"></i> {record.name}</h4>
                             <p className='ltln'>{record.coord.lon} & {record.coord.lat}</p>
+                            <Cards id={record.id}/>
                     </div>
                 )
                 

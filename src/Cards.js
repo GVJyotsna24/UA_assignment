@@ -1,8 +1,24 @@
 import { Card, Col, Container, Form, Row } from "react-bootstrap";
 import '@fortawesome/fontawesome-free/js/all.js';
 import Records from './city.json';
+import React,{useEffect, useState} from 'react';
+import axios from "axios";
 
-function Cards(){
+
+
+function Cards(props){
+    var y=props.id
+    var baseURL='http://api.openweathermap.org/data/2.5/forecast?id='+y+'&appid=1cd36dd008450d3817f0c09111fe9881';
+    const [post, setPost] = React.useState(null);
+
+    React.useEffect(() => {
+        axios.get(baseURL).then((response) => {
+        setPost(response.data);
+        });
+    }, []);
+
+  if (!post) return null;
+
     return(
         <div>
             <Container  className="cardscont">
@@ -29,7 +45,7 @@ function Cards(){
                         </Card>
                     </Col>
                     <Col xs={6} md={2}  className='col2' >
-                    <h6 className="cardDate">{Records[0].dt_txt}</h6>
+                    <h6 className="cardDate">{post.list[0].dt_txt}</h6>
                         <Card >
                             <Card.Header className="cardHead">
                             <Row>
@@ -45,17 +61,17 @@ function Cards(){
                             </Card.Header>
                                 <Card.Body className="CardBody">
                                 <ul className=" list list-unstyled">
-                                        <li>{Records[0].main.temp_max}K</li>
-                                        <li>{Records[0].main.temp_min}K</li>
-                                        <li>{Records[0].main.humidity}%</li>
-                                        <li>05:00 AM</li>
-                                        <li>05:45 PM</li>
+                                        <li>{post.list[0].main.temp_max}K</li>
+                                        <li>{post.list[0].main.temp_min}K</li>
+                                        <li>{post.list[0].main.humidity}%</li>
+                                        <li>{post.city.sunrise}</li>
+                                        <li>{post.city.sunset}</li>
                                     </ul>
                                 </Card.Body>
                         </Card>
                     </Col>
                     <Col  xs={6} md={2}  className="col3">
-                    <h6 className="cardDate">{Records[1].dt_txt}</h6>
+                    <h6 className="cardDate">{post.list[4].dt_txt}</h6>
                         <Card>
                             <Card.Header className="cardHead">
                             <Row>
@@ -71,11 +87,11 @@ function Cards(){
                             </Card.Header>
                                 <Card.Body className="CardBody">
                                 <ul className=" list list-unstyled">
-                                        <li>{Records[1].main.temp_max}K</li>
-                                        <li>{Records[1].main.temp_min}K</li>
-                                        <li>{Records[1].main.humidity}%</li>
-                                        <li>05:00 AM</li>
-                                        <li>05:45 PM</li>
+                                        <li>{post.list[4].main.temp_max}K</li>
+                                        <li>{post.list[4].main.temp_min}K</li>
+                                        <li>{post.list[4].main.humidity}%</li>
+                                        <li>{post.city.sunrise}</li>
+                                        <li>{post.city.sunset}</li>
                                     </ul>
                                 </Card.Body>
                         </Card>
@@ -97,17 +113,17 @@ function Cards(){
                             </Card.Header>
                                 <Card.Body className="CardBody">
                                 <ul className=" list list-unstyled">
-                                        <li>{Records[2].main.temp_max}K</li>
-                                        <li>{Records[2].main.temp_min}K</li>
-                                        <li>{Records[2].main.humidity}%</li>
-                                        <li>05:00 AM</li>
-                                        <li>05:45 PM</li>
+                                        <li>{post.list[10].main.temp_max}K</li>
+                                        <li>{post.list[10].main.temp_min}K</li>
+                                        <li>{post.list[10].main.humidity}%</li>
+                                        <li>{post.city.sunrise}</li>
+                                        <li>{post.city.sunset}</li>
                                     </ul>
                                 </Card.Body>
                         </Card>
                     </Col>
                     <Col md={2} xs={6} className="col5">
-                    <h6 className="cardDate">{Records[3].dt_txt}</h6>
+                    <h6 className="cardDate">{post.list[16].dt_txt}</h6>
                         <Card>
                             <Card.Header className="cardHead">
                                 <Row>
@@ -125,17 +141,17 @@ function Cards(){
                             </Card.Header>
                                 <Card.Body className="CardBody">
                                 <ul className=" list list-unstyled">
-                                        <li>{Records[3].main.temp_max}K</li>
-                                        <li>{Records[3].main.temp_min}K</li>
-                                        <li>{Records[3].main.humidity}%</li>
-                                        <li>05:00 AM</li>
-                                        <li>05:45 PM</li>
+                                        <li>{post.list[16].main.temp_max}K</li>
+                                        <li>{post.list[16].main.temp_min}K</li>
+                                        <li>{post.list[16].main.humidity}%</li>
+                                        <li>{post.city.sunrise}</li>
+                                        <li>{post.city.sunset}</li>
                                     </ul>
                                 </Card.Body>
                         </Card>
                     </Col>
                     <Col md={2} xs={6}  className='col6'>
-                    <h6 className="cardDate">{Records[4].dt_txt}</h6>
+                    <h6 className="cardDate">{post.list[20].dt_txt}</h6>
                         <Card>
                             <Card.Header className="cardHead">
                                 <Row>
@@ -151,11 +167,11 @@ function Cards(){
                             </Card.Header>
                                 <Card.Body className="CardBody">
                                 <ul className=" list list-unstyled">
-                                        <li>{Records[4].main.temp_max}K</li>
-                                        <li>{Records[4].main.temp_min}K</li>
-                                        <li>{Records[4].main.humidity}%</li>
-                                        <li>05:00 AM</li>
-                                        <li>05:45 PM</li>
+                                        <li>{post.list[20].main.temp_max}K</li>
+                                        <li>{post.list[20].main.temp_min}K</li>
+                                        <li>{post.list[20].main.humidity}%</li>
+                                        <li>{post.city.sunrise}</li>
+                                        <li>{post.city.sunset}</li>
                                     </ul>
                                 </Card.Body>
                         </Card>
