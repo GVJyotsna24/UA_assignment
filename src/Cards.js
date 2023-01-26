@@ -97,7 +97,7 @@ function Cards(props){
                         </Card>
                     </Col>
                     <Col md={2} xs={6} className="col4">
-                    <h6 className="cardDate">{Records[2].dt_txt}</h6>
+                    <h6 className="cardDate">{post.list[10].dt_txt}</h6>
                         <Card>
                             <Card.Header className="cardHead">
                                 <Row>
