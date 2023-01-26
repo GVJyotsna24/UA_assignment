@@ -1,5 +1,5 @@
 import Cards from './Cards';
-import Records from './city.list.json'
+import Records from './cities.json'
 
 
 function Location(props){

@@ -1,4 +1,4 @@
-import Records from './city.list.json'
+import Records from './cities.json'
 import Location from './Loction'
 
 function Searchcity(props){

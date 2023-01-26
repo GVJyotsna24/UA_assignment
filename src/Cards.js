@@ -1,6 +1,6 @@
 import { Card, Col, Container, Form, Row } from "react-bootstrap";
 import '@fortawesome/fontawesome-free/js/all.js';
-import Records from './city.json';
+import Records from './cities.json';
 import React,{useEffect, useState} from 'react';
 import axios from "axios";
 
