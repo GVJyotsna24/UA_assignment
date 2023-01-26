@@ -97,7 +97,7 @@ function Cards(props){
                         </Card>
                     </Col>
                     <Col md={2} xs={6} className="col4">
-                    <h6 className="cardDate">{post.list[10].dt_txt}</h6>
+                    <h6 className="cardDate">{post.list[15].dt_txt}</h6>
                         <Card>
                             <Card.Header className="cardHead">
                                 <Row>
@@ -113,9 +113,9 @@ function Cards(props){
                             </Card.Header>
                                 <Card.Body className="CardBody">
                                 <ul className=" list list-unstyled">
-                                        <li>{post.list[10].main.temp_max}K</li>
-                                        <li>{post.list[10].main.temp_min}K</li>
-                                        <li>{post.list[10].main.humidity}%</li>
+                                        <li>{post.list[15].main.temp_max}K</li>
+                                        <li>{post.list[15].main.temp_min}K</li>
+                                        <li>{post.list[15].main.humidity}%</li>
                                         <li>{post.city.sunrise}</li>
                                         <li>{post.city.sunset}</li>
                                     </ul>
@@ -123,7 +123,7 @@ function Cards(props){
                         </Card>
                     </Col>
                     <Col md={2} xs={6} className="col5">
-                    <h6 className="cardDate">{post.list[16].dt_txt}</h6>
+                    <h6 className="cardDate">{post.list[20].dt_txt}</h6>
                         <Card>
                             <Card.Header className="cardHead">
                                 <Row>
@@ -141,9 +141,9 @@ function Cards(props){
                             </Card.Header>
                                 <Card.Body className="CardBody">
                                 <ul className=" list list-unstyled">
-                                        <li>{post.list[16].main.temp_max}K</li>
-                                        <li>{post.list[16].main.temp_min}K</li>
-                                        <li>{post.list[16].main.humidity}%</li>
+                                        <li>{post.list[20].main.temp_max}K</li>
+                                        <li>{post.list[20].main.temp_min}K</li>
+                                        <li>{post.list[20].main.humidity}%</li>
                                         <li>{post.city.sunrise}</li>
                                         <li>{post.city.sunset}</li>
                                     </ul>
@@ -151,7 +151,7 @@ function Cards(props){
                         </Card>
                     </Col>
                     <Col md={2} xs={6}  className='col6'>
-                    <h6 className="cardDate">{post.list[20].dt_txt}</h6>
+                    <h6 className="cardDate">{post.list[30].dt_txt}</h6>
                         <Card>
                             <Card.Header className="cardHead">
                                 <Row>
@@ -167,9 +167,9 @@ function Cards(props){
                             </Card.Header>
                                 <Card.Body className="CardBody">
                                 <ul className=" list list-unstyled">
-                                        <li>{post.list[20].main.temp_max}K</li>
-                                        <li>{post.list[20].main.temp_min}K</li>
-                                        <li>{post.list[20].main.humidity}%</li>
+                                        <li>{post.list[30].main.temp_max}K</li>
+                                        <li>{post.list[30].main.temp_min}K</li>
+                                        <li>{post.list[30].main.humidity}%</li>
                                         <li>{post.city.sunrise}</li>
                                         <li>{post.city.sunset}</li>
                                     </ul>
