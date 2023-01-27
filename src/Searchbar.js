@@ -3,7 +3,7 @@ import { Form } from "react-bootstrap";
 import Searchcity from './Searchcity'
 
 function Searchbar(){
-    const [search, setSearch]=useState();
+    const [search, setSearch]=useState('London');
     return(
         <div>
             <Form>

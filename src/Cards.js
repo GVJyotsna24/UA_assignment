@@ -9,13 +9,14 @@ import axios from "axios";
 function Cards(props){
     var y=props.id
     var baseURL='http://api.openweathermap.org/data/2.5/forecast?id='+y+'&appid=1cd36dd008450d3817f0c09111fe9881';
-    const [post, setPost] = React.useState(null);
+    const [post, setPost] = useState(null);
 
-    React.useEffect(() => {
+        useEffect(() => {
         axios.get(baseURL).then((response) => {
         setPost(response.data);
         });
-    }, []);
+        
+    }, [baseURL]);
 
   if (!post) return null;
 
