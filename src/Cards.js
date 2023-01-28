@@ -55,7 +55,7 @@ function Cards(props){
 
                                     </Col>
                                     <Col  md={9}>
-                                        <h4>Sunny</h4>
+                                        <h6>{post.list[0].weather[0].description}</h6>
 
                                     </Col>
                                 </Row>
@@ -81,7 +81,7 @@ function Cards(props){
 
                                     </Col>
                                     <Col  md={9}>
-                                        <h4>Snowy</h4>
+                                    <h6>{post.list[4].weather[0].description}</h6>
 
                                     </Col>
                                 </Row>
@@ -107,7 +107,7 @@ function Cards(props){
 
                                     </Col>
                                     <Col  md={9}>
-                                        <h4>Rainy</h4>
+                                        <h6>{post.list[15].weather[0].description}</h6>
 
                                     </Col>
                                 </Row>
@@ -133,7 +133,7 @@ function Cards(props){
 
                                     </Col>
                                     <Col md={9}>
-                                    <h4>Windy</h4>
+                                    <h6>{post.list[20].weather[0].description}</h6>
                                     </Col>
                                 </Row>
                                 
@@ -161,7 +161,7 @@ function Cards(props){
                                         
                                     </Col>
                                     <Col md={9}>
-                                        <h4>Rainy</h4>
+                                    <h6>{post.list[30].weather[0].description}</h6>
                                         
                                     </Col>
                                 </Row>

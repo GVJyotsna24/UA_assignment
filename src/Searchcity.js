@@ -5,7 +5,7 @@ function Searchcity(props){
     var ans=props.city;
     var x=-1;
     Records.map((record) => {
-        if(record.name===ans){
+        if(record.name.toLowerCase()===ans.toLowerCase()){
             x=record.id
           
         }
