@@ -50,11 +50,11 @@ function Cards(props){
                         <Card >
                             <Card.Header className="cardHead">
                             <Row>
-                                    <Col md={3}>
-                                        <i className="fa-regular fa-2xl fa-sun"></i>
+                                    {/* <Col md={3}> */}
+                                        {/* <i className="fa-regular fa-2xl fa-sun"></i> */}
 
-                                    </Col>
-                                    <Col  md={9}>
+                                    {/* </Col> */}
+                                    <Col  >
                                         <h6>{post.list[0].weather[0].description}</h6>
 
                                     </Col>
@@ -76,11 +76,11 @@ function Cards(props){
                         <Card>
                             <Card.Header className="cardHead">
                             <Row>
-                                    <Col md={3}>
-                                        <i className="fa-regular fa-2xl fa-snowflake"></i>
+                                    {/* <Col md={3}> */}
+                                        {/* <i className="fa-regular fa-2xl fa-snowflake"></i> */}
 
-                                    </Col>
-                                    <Col  md={9}>
+                                    {/* </Col> */}
+                                    <Col  md>
                                     <h6>{post.list[4].weather[0].description}</h6>
 
                                     </Col>
@@ -102,11 +102,11 @@ function Cards(props){
                         <Card>
                             <Card.Header className="cardHead">
                                 <Row>
-                                    <Col md={3}>
-                                        <i className="fa-solid fa-2xl fa-cloud-rain"></i>
+                                    {/* <Col md={3}> */}
+                                        {/* <i className="fa-solid fa-2xl fa-cloud-rain"></i> */}
 
-                                    </Col>
-                                    <Col  md={9}>
+                                    {/* </Col> */}
+                                    <Col  md>
                                         <h6>{post.list[15].weather[0].description}</h6>
 
                                     </Col>
@@ -128,11 +128,11 @@ function Cards(props){
                         <Card>
                             <Card.Header className="cardHead">
                                 <Row>
-                                    <Col md={3}>
-                                        <i className="fa-solid fa-2xl fa-wind"></i>
+                                    {/* <Col md={3}> */}
+                                        {/* <i className="fa-solid fa-2xl fa-wind"></i> */}
 
-                                    </Col>
-                                    <Col md={9}>
+                                    {/* </Col> */}
+                                    <Col md>
                                     <h6>{post.list[20].weather[0].description}</h6>
                                     </Col>
                                 </Row>
@@ -156,11 +156,11 @@ function Cards(props){
                         <Card>
                             <Card.Header className="cardHead">
                                 <Row>
-                                    <Col md={3}>
-                                        <i className="fa-solid fa-2xl fa-cloud-rain"></i>
+                                    {/* <Col md={3}> */}
+                                        {/* <i className="fa-solid fa-2xl fa-cloud-rain"></i> */}
                                         
-                                    </Col>
-                                    <Col md={9}>
+                                    {/* </Col> */}
+                                    <Col md>
                                     <h6>{post.list[30].weather[0].description}</h6>
                                         
                                     </Col>
